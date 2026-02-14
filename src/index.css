@@ -1,0 +1,21 @@
+:root {
+  --color-sailor-navy: #1a1a40;
+  --color-sailor-gold: #fdb813;
+  --color-sailor-pink: #ff69b4;
+  --color-sailor-white: #ffffff;
+  --color-sailor-lilac: #e6e6fa;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--color-sailor-navy);
+  color: var(--color-sailor-white);
+  overflow: hidden; /* Prevent scrollbar during animation */
+}
+
+input[type="file"] {
+  display: block;
+  margin-top: 10px;
+}
