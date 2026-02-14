@@ -2,6 +2,7 @@ import { useState } from "react";
 import classNames from "classnames";
 import "./App.css";
 import "./falling_stars.css";
+import "./responsive.css";
 
 import Foto1 from "./assets/Foto1.jpg";
 import Foto2 from "./assets/Foto2.jpg";

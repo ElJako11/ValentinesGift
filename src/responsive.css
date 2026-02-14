@@ -1,0 +1,45 @@
+/* Responsive adjustments */
+@media (max-width: 800px) {
+  .book {
+    /* Scale the book to fit the screen width dynamically. 
+       The book is approx 750px wide when open (2 * 350px pages + margins/perspective) */
+    transform: scale(calc((100vw - 20px) / 750));
+    /* Ensure it scales from the center */
+    transform-origin: center center;
+  }
+
+  .controls {
+    bottom: 20px;
+    width: 90%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .controls button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    flex: 1; /* Make buttons grow to be easier to tap */
+  }
+
+  .pagination {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+}
+
+/* Adjust for very small screens or landscape mobile */
+@media (max-height: 600px) {
+  .book {
+    /* If height is the limiting factor, scale based on height */
+    transform: scale(calc((100vh - 100px) / 550));
+  }
+
+  .controls {
+    bottom: 10px;
+  }
+
+  /* Hide falling stars on very small devices if performance is an issue, 
+     but keeping them for aesthetics usually is fine. 
+     Optional: reduce star count or simplify if needed. 
+  */
+}
